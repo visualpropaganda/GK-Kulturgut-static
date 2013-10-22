@@ -5,15 +5,27 @@
 		[
 			[
 				"text",
-				"text-align"
+				"text-transform"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"bg",
+				"bg_footer"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-bottom"
 			],
 			[
 				"block",
 				"inline-block"
-			],
-			[
-				"border",
-				"border-radius"
 			],
 			[
 				"padding",
@@ -34,10 +46,6 @@
 			[
 				"footer",
 				"footer-link"
-			],
-			[
-				"bg",
-				"bgc	background-color: #${1:fff};"
 			],
 			[
 				"content",
@@ -66,10 +74,6 @@
 			[
 				"back",
 				"background-position"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"background",
@@ -283,7 +287,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13737,
+				"buffer_size": 13608,
 				"line_ending": "Unix"
 			}
 		},
@@ -304,26 +308,13 @@
 			}
 		},
 		{
+			"contents": "body {\n    border-top: 32px solid $bg_footer;\n    border-top: 2rem solid $bg_footer;\n}\n\n#topmeta {\n    @include x-rem (height,2); // 2rem,32px\n    @include x-rem (margin-top,-2);\n    @include x-rem (padding, 0.5 0 0);\n}\n\n#mainnav>ul {\n    //display: table;\n    margin: 0 auto;\n    //width: 80%;\n    li {\n        position: relative;\n        //list-style: none;\n        display: table-cell;\n        padding: 0 $gutter;\n        text-transform: lowercase;\n        // border-left: 1px solid $bodytext;\n        line-height: 1rem;\n        a {border: 0;}\n    }\n    //li:first-of-type {border-left: 0;}\n    ul {\n        display: block;\n        visibility: hidden;\n        position: absolute;\n        padding-top: 1.5rem;\n        margin: 0;\n        top: 100%;\n        left: 0;\n        z-index: 100;\n        li {\n            float: none;\n            display: list-item;\n            list-style: none;\n            text-transform: lowercase;\n            line-height: 2rem;\n            padding: $gutter*2;\n            border-left: 0;\n            border-bottom: 1px solid $bodytext;\n            white-space: nowrap;\n            a {\n                padding: 0 $gutter*2;\n            }\n        }\n        li:last-of-type {border-bottom: 0;}\n    }\n}\n\n//grid\n.col1 {\n    width: $column;\n    margin-left: $gutter;\n    list-style: none;\n    padding: $gutter/2;\n    float: left;\n}\n\n.metanav {\n    float: right;\n    list-style: none;\n    margin: 0 auto;\n    max-width: $page;\n    li {float: left;\n        padding: 0 10px;\n        @include x-rem (line-height, 1);\n        border-left: 1px solid $textmeta;\n        a { color: $textmeta;\n            border: 0;\n            &:hover {\n                color: white;\n                border: 0;\n            }\n        }\n    }\n    li:first-of-type {border-left: 0;}\n}",
 			"file": "scss/media_20em.scss",
+			"file_size": 1804,
+			"file_write_time": 1381062041000000,
 			"settings":
 			{
-				"buffer_size": 1804,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/_modular-scale.scss",
-			"settings":
-			{
-				"buffer_size": 1475,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scss/rem-mixin.scss",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 1782,
 				"line_ending": "Unix"
 			}
 		},
@@ -331,7 +322,7 @@
 			"file": "scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 9789,
+				"buffer_size": 11505,
 				"line_ending": "Unix"
 			}
 		}
@@ -339,9 +330,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 347.0,
+		"height": 67.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"gist",
 				"Gist: Open Gist"
@@ -487,10 +482,6 @@
 				"Set Syntax: HTML (Tcl)"
 			],
 			[
-				"pack",
-				"Package Control: Install Package"
-			],
-			[
 				"packag",
 				"Package Control: Install Package"
 			],
@@ -516,11 +507,13 @@
 	},
 	"file_history":
 	[
+		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/style.scss",
+		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/rem-mixin.scss",
+		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/_modular-scale.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/team.html",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/fullwidth.html",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/_x-rem.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/_x-rem-mixin.scss",
-		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/_modular-scale.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/GKKultur-stat.sublime-project",
 		"/Users/Mirko/Desktop/index.html",
 		"/Volumes/AREA-1/02.2_Projekte/Hugh Featherstone/Website/Code/css/normalize.css",
@@ -607,6 +600,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"border",
+			"10%",
 			"960x350",
 			"img/team_platzhalter.jpg",
 			"legal",
@@ -702,15 +697,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 13737,
+						"buffer_size": 13608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9989,
-								9989
+								3279,
+								3279
 							]
 						],
 						"settings":
@@ -720,7 +715,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1009.0,
+						"translation.y": 710.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -776,7 +771,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1648.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -786,76 +781,21 @@
 					"file": "scss/media_20em.scss",
 					"settings":
 					{
-						"buffer_size": 1804,
+						"buffer_size": 1782,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1251,
-								1251
+								801,
+								801
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "scss/_modular-scale.scss",
-					"settings":
-					{
-						"buffer_size": 1475,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								453,
-								453
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "scss/rem-mixin.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -871,19 +811,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 9789,
+						"buffer_size": 11505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4663,
-								4663
+								6162,
+								6162
 							]
 						],
 						"settings":
@@ -893,7 +833,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3851.0,
+						"translation.y": 5469.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
