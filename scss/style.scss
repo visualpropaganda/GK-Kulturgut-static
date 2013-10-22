@@ -1,0 +1,493 @@
+@import "_normalize.scss";
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ol, ul {margin: 0; padding: 0}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import "../font-awesome/scss/font-awesome.scss";
+@import "_open-sans.scss";
+
+/* ==========================================================================
+   gk-kulturgut.de custom styles
+   ========================================================================== */
+
+/*-------- SASS ------ */
+/* --------Variables --*/
+
+// color-variables
+$headline: #1a498a;
+$bodytext: #333;
+$footertext: #ccc;
+$navtext: #2047c0; //1a498a;
+$textlink: #2047c0;
+$hover: #2a83ed;  //336699;
+$textmeta: #32362e;
+$bg_html: #fff;
+$bg_footer: #f7f7f8;
+$footer-border: #e9eaee;
+$bg_footer_meta: #8d9095;
+$footer_link: #eee;
+
+// sizes-variables
+$page:  960px;
+$gutter: 2.08333333%; // 20px
+$column: 31.927452834919674%; // 307px
+
+/* apply a natural box layout model to all elements (all Browsers gte IE8)*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Mixins
+@import "modular-scale.scss";
+@import "rem-mixin.scss";
+@import "utils.scss";
+
+
+body {font-family: 'open_sansregular', sans-serif; }
+
+h1,h2,h3,h4,h5,h6,p {
+    text-rendering: optimizeLegibility;
+    line-height: $line-height-base; /* 1.5rem */
+    margin-top: $line-height-base;
+    margin-bottom: $line-height-base;
+}
+
+h1 {
+  @include type(3);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include type(5);
+  text-transform: uppercase;
+}
+
+h3 {
+    @include type(6);
+    text-transform: uppercase;
+}
+
+h4 {
+    @include type(7);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.meta {@include type(9);}
+footer {@include type(8);}
+
+// Basic Stuff
+html {background: $bg_html;}
+
+body {color: $bodytext;}
+
+
+
+.wrapper, #topmeta, footer>h4, footer>ul {
+    @include x-rem(margin, 0 1)
+}
+
+section>ul, aside>ul, footer>ul {list-style: none;}
+
+a {
+    text-decoration: none;
+    color: $textlink;
+    border-bottom: 1px dashed $textlink;
+    padding-bottom: 1px;
+    &:visited {@extend a};
+    &:hover {
+        color: $hover;
+        border-bottom: 1px solid $hover;
+    }
+}
+
+img {width: 100%;}
+
+.icon {
+    background: $textlink;
+    border-radius: 8px;
+    width: 60px; // experimentell gefunden!!
+    height: 60px;
+    margin: 32px auto 0;
+    margin: 2rem auto 0;
+    text-align: center;
+    i {
+        display: inline-block;
+        color: #fff;
+        line-height: 60px;
+    }
+}
+
+.more-link {
+    border: 0;
+    font-family: 'open_sansbold', sans-serif;
+    @include type(8);
+    &:hover {
+        border: 0;
+    }    
+}
+
+// Mobile-Navigation
+.menubtn {
+    display: none;
+    visibility: hidden;
+}
+
+// linear layout for older Browser (gte IE7) and FeaturePhones (240px)
+// "First" Media-Query
+
+.metanav {
+    list-style: none;
+    li {@include x-rem (line-height, 1);}
+}
+
+// Header
+#banner {
+    margin: $gutter 0;
+    #branding a {
+        display: block;
+        overflow: hidden;
+        height: 73px;
+        width: 250px;
+        border-bottom: 0;
+        background: url('../img/banner_logo.png') no-repeat;
+        text-indent: -2000px;
+        font-size: 1em;
+        font-family: 'open_sansbold', sans-serif;
+        border: 0;
+        &:hover {
+            border: 0;
+            color: $bodytext;
+        }
+    }
+}
+
+// Navigation
+#mainnav ul {
+    list-style: none;
+}
+
+#mainnav>ul>li>a {font-family: 'open_sansbold', sans-serif;}
+#mainnav>ul ul {padding-left: 20px}
+
+// Frontpage
+#hero>ul h2, #teaser>ul h3 {margin-bottom: 0; font-family: 'open_sansbold', sans-serif;}
+#hero>ul p, #teaser>ul p {@include x-rem (margin, 0.5 0 0.5);}
+
+// Vorstand-Template
+.team-member {@include x-rem (margin-top, 1);}
+
+// Footer
+#siteinfo {
+    background: $bg_footer;
+    border-top: 12px solid $footer-border;
+    @include x-rem (margin-top, 1);
+    @include x-rem (padding-bottom, 2);
+    h4 {
+        font-family: 'open_sansbold', sans-serif;
+        @include x-rem (margin-top, 1);
+        @include x-rem (padding-top, 1);
+    }
+    p {margin: 0;}
+    .bold {
+        @include x-rem (margin-top, 1);
+        font-family: 'open_sansbold', sans-serif;
+    }
+}
+
+#satzung a h4 {@include x-rem (margin, 1 0 0);}
+
+#bottommeta {
+    @include x-rem (padding,1.5 0 1.5 1);
+    border-top: 1px solid $bg_footer_meta;
+    background-color: $bg-footer;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
