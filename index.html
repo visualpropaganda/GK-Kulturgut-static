@@ -48,14 +48,9 @@
                         <li><a href="#mainnav">Zur Hauptnavigation</a><span> . </span></li>
                         <li><a href="#main">Zum Inhalt</a><span> . </span></li>
                         <li><a href="#siteinfo">Zu den Kontakt-Informationen</a><span> . </span></li>
+                        <li><a href="barrierefreiheit.html">Informationen zur Barrierefreiheit</a><span> . </span></li>
                 </ul>           
                 <!-- End skiplinks -->
-
-                <ul class="metanav cf">
-                    <li><a class="meta" href="impressum.html" title="Impressum &amp; Datenschutzerklärung">Impressum &amp; Datenschutzerklärung</a></li>
-                    <li><a class="meta" href="hilfe.html" title="Hilfe zu dieser Website">Hilfe zu dieser Website</a></li>
-                </ul>
-                <!-- End metanav -->
             </div> <!-- End topmeta -->
 
             <header role="banner">
@@ -69,11 +64,11 @@
 
             <nav id="mainnav" role="navigation">
                 <ul class="cf">
-                    <li><a href="ueberuns.html" title="Über uns">Über uns</a>
+                    <li><a class="active" href="ueberuns.html" title="Über uns">Über uns</a>
                         <ul>
-                            <li><a href="seite.html" title="Verein">Verein</a></li>
-                            <li><a href="vorstand.html" title="Vorstand">Vorstand</a></li>
-                            <li><a href="arbeitsgruppen.html" title="Arbeitsgruppen">Arbeitsgruppen</a></li>
+                            <li><a href="seite.html" title="Der Verein">Der Verein</a></li>
+                            <li><a href="vorstand.html" title="Der Vorstand">Der Vorstand</a></li>
+                            <li><a href="arbeitsgruppen.html" title="Fachgruppen">Fachgruppen</a></li>
                         </ul
                     </li>
                     <li><a href="unterstuetzung.php" title="Unterstützung">Unterstützung</a>
@@ -173,54 +168,66 @@
 
         </div> <!-- End wrapper -->
 
-        <footer id="siteinfo" role="contentinfo">
-          <h4>KONTAKT</h4>
-            <ul class="cf">
-                <li class="1col">
+        <footer id="siteinfo" class="cf" role="contentinfo">
+            <div id="footerinner">
+                <div class="contact">
+                    <h4>KONTAKT</h4>
                     <p class="bold">GK Kulturgut!</p>
-                    <p class="gap">Kunst &amp; Kultur in Geilenkirchen e.V.</p>
+                    <p class="subline">&mdash; Kunst &amp; Kultur in Geilenkirchen e.V.</p>
                     <p>Vorsitzende: Henriette Echghi-Ghamsari</p>
-                    <p>stellvertr. Vorsitzender: Christoph R. Grundmann</p>
-                </li>
-                <li class="vcard 1col">
-                    <p class="bold">Anschrift</p>
-                    <p class="fn org">GK Kulturgut! e.V.</p>
-                    <div class="adr">
-                        <p class="post-office-box">Postfach 1151</p>
-                        <p class="gap"><span class="postal-code">52501 </span><span class="locality">Geilenkirchen</span></p>
-                    </div>
-                    <p class="bold">Kommunikation</p>
-                    <table class="communication">
-                        <tr>
-                            <td class="tel">Telefon: <span class="type hidden">(Work)</span></td>
-                            <td class="value">02451 &middot; 629413</td>
-                        </tr>
-                        <tr>
-                            <td class="email">Email:</td>
-                            <td class="value"><a href="mailto:info@gk-kulturgut.de">info@gk-kulturgut.de</a></td>
-                        </tr>
-                        <tr>
-                            <td class="url">Web:</td>
-                            <td class="value"><a href="http://www.gk-kulturgut.de">www.gk-kulturgut.de</a></td>
-                        </tr>
-                    </table>        
-                   <div class="download">
-                        <p class="bold">Unsere digitale Visitenkarte</p>
-                        <a href="http://suda.co.uk/projects/microformats/hcard/get-contact.php?uri=http://www.steppke-hawei.de" rel="vcard" title="Kontaktdaten (vCard) herunterladen">Fügen Sie unsere Kontaktdaten automatisch in Ihr Adressbuch ein!</a>
-                    </div>
-                </li>
-                <li id="satzung" class="1col">
-                    <a href="docs/satzung.pdf" title="Satzung GK Kulturgut" target="_blank">
-                    <h4>Unsere Satzung</h4>
-                    <p>Laden Sie sich unsere Satzung auf Ihren PC herunter.<br>(PDF, 311KB)</p>
-                    </a>
-                </li>
-            </ul>
-        </footer>         <!-- End footer -->
-        <div id="bottommeta" class="meta">&copy; 2013 GK Kulturgut! e.V. &middot; Alle Rechte vorbehalten &#124; Gestaltung &amp; Programmierung: <a href="http://www.sehrausch.de" title="www.sehrausch.de" target="_blank">Sehrausch &mdash; Gestaltung &amp; Fotografie</a>
+                    <p>stellv. Vorsitzender: Christoph R. Grundmann</p>
+                </div>
+                <ul class="cf vcard">    
+                    <li>
+                        <p class="bold">Anschrift</p>
+                        <p class="fn org">GK Kulturgut! e.V.</p>
+                        <div class="adr">
+                            <p class="post-office-box">Postfach 1151</p>
+                            <p><span class="postal-code">52501 </span><span class="locality">Geilenkirchen</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="bold">Kommunikation</p>
+                        <table class="communication">
+                            <tr>
+                                <td class="tel">Telefon: <span class="type hidden">(Work)</span></td>
+                                <td class="value">02451 &middot; 62&thinsp;94&thinsp;13</td>
+                            </tr>
+                            <tr>
+                                <td class="email">Email:</td>
+                                <td class="value"><a href="mailto:info@gk-kulturgut.de">info@gk-kulturgut.de</a></td>
+                            </tr>
+                            <tr>
+                                <td class="url">Web:</td>
+                                <td class="value"><a href="http://www.gk-kulturgut.de">www.gk-kulturgut.de</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                       <div class="download">
+                            <a href="http://suda.co.uk/projects/microformats/hcard/get-contact.php?uri=http://www.steppke-hawei.de" rel="vcard" title="Kontaktdaten (vCard) herunterladen">
+                                <p class="bold">Digitale Visitenkarte</p>
+                                <p>Fügen Sie unsere Kontaktdaten automatisch in Ihr Adressbuch ein!</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- End footerinner -->
+        </footer> <!-- End footer -->
+        <div id="bottommeta" class="meta cf">
+            <div id="bottommetainner">
+                <p>&copy; 2013 GK Kulturgut! e.V. &middot; Alle Rechte vorbehalten</p>
+                <ul class="metanav cf">
+                    <li><a class="meta" href="nutzungsbedingungen.html" title="Nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li><a class="meta" href="datenschutz.html" title="Datenschutz &amp; Cookies">Datenschutz &amp; Verwendung von Cookies</a></li>
+                    <li><a class="meta" href="barrierefreiheit.html" title="Informationen zur Barrierefreiheit">Informationen zur Barrierefreiheit</a></li>
+                </ul>
+                <!-- End metanav -->
+                <p>Gestaltung &amp; Programmierung: <a href="http://www.sehrausch.de" title="www.sehrausch.de" target="_blank">Sehrausch &mdash; Gestaltung &amp; Fotografie</a></p>
+            </div> <!-- End bottommetainner -->
         </div> <!-- End bottommeta -->
 
-
+        <script src="https://get.gridsetapp.com/23911/overlay/"></script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

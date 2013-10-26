@@ -4,32 +4,72 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-transform"
+				"ta",
+				"table-cell"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"foo",
+				"footer-border"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"pad",
+				"padding-left"
 			],
 			[
 				"pos",
-				"pos-r	position: relative;"
+				"pos-a	position: absolute;"
+			],
+			[
+				"footer",
+				"footer-border"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"lin",
+				"more-link"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tab",
+				"table-header-group"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-top"
 			],
 			[
 				"bg",
 				"bg_footer"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
-				"border",
-				"border-bottom"
-			],
-			[
 				"block",
 				"inline-block"
-			],
-			[
-				"padding",
-				"padding-bottom"
 			],
 			[
 				"open",
@@ -42,10 +82,6 @@
 			[
 				"bg_footer",
 				"bg_footer_meta"
-			],
-			[
-				"footer",
-				"footer-link"
 			],
 			[
 				"content",
@@ -64,16 +100,8 @@
 				"nowrap"
 			],
 			[
-				"tab",
-				"table-cell"
-			],
-			[
 				"fi",
 				"fix	CSS - position: fixed;"
-			],
-			[
-				"back",
-				"background-position"
 			],
 			[
 				"background",
@@ -114,10 +142,6 @@
 			[
 				"min",
 				"min-height"
-			],
-			[
-				"backgr",
-				"background-image"
 			],
 			[
 				"rel",
@@ -240,10 +264,6 @@
 				"absolute"
 			],
 			[
-				"padding-",
-				"padding-bottom"
-			],
-			[
 				"bol",
 				"bold"
 			],
@@ -287,7 +307,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13608,
+				"buffer_size": 13649,
 				"line_ending": "Unix"
 			}
 		},
@@ -322,7 +342,15 @@
 			"file": "scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 11505,
+				"buffer_size": 15732,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/_utils.scss",
+			"settings":
+			{
+				"buffer_size": 433,
 				"line_ending": "Unix"
 			}
 		}
@@ -600,6 +628,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text-align:",
+			"40em",
+			"$footer_link",
+			"$bg_footer_meta",
+			"$footer-border",
+			"$bg_footer",
+			"$bg_html",
+			"$textmeta",
+			"$hover",
+			"$textlink",
+			"$navtext",
+			"linkcolor",
+			"$navtext",
+			"$textlink",
+			"$navtext",
+			"$footertext",
+			"$bodytext",
+			"$headline",
+			"all ",
+			"ease-in-out",
 			"border",
 			"10%",
 			"960x350",
@@ -697,15 +745,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 13608,
+						"buffer_size": 13649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3279,
-								3279
+								3838,
+								3838
 							]
 						],
 						"settings":
@@ -715,7 +763,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 710.0,
+						"translation.y": 982.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -788,8 +836,8 @@
 						"selection":
 						[
 							[
-								801,
-								801
+								749,
+								749
 							]
 						],
 						"settings":
@@ -815,15 +863,15 @@
 					"file": "scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 11505,
+						"buffer_size": 15732,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6162,
-								6162
+								5567,
+								5567
 							]
 						],
 						"settings":
@@ -833,7 +881,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5469.0,
+						"translation.y": 4797.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/_utils.scss",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
