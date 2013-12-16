@@ -162,12 +162,6 @@ html {background: $bg_html;}
 
 body {color: $bodytext;}
 
-// .content, #topmeta, .contact, #footerinner>ul {
-//     margin: 0 $gutter;
-// }
-
-.content {z-index: 0;}
-
 section>ul, aside>ul, footer ul {list-style: none;}
 
 a {
@@ -344,8 +338,9 @@ header[role=banner] {
             left: 0;
             height: 0.375rem; 
             overflow: hidden;
-            width: 100%;
+            width: 104%;
             margin: 0;
+            margin-left: -2%;
         }
     }
     @include respond-min (43.75em) {

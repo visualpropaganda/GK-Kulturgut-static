@@ -4,20 +4,32 @@
 		"selected_items":
 		[
 			[
-				"ta",
-				"table-cell"
+				"margin",
+				"margin-right"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"nth",
+				"nth-of-type"
 			],
 			[
 				"border",
 				"border-left"
 			],
 			[
-				"foo",
-				"footer-border"
+				"padding-",
+				"padding-right"
 			],
 			[
-				"margin",
-				"margin-left"
+				"ta",
+				"table-cell"
+			],
+			[
+				"foo",
+				"footer-border"
 			],
 			[
 				"pad",
@@ -34,10 +46,6 @@
 			[
 				"tra",
 				"transparent"
-			],
-			[
-				"padding-",
-				"padding-left"
 			],
 			[
 				"back",
@@ -307,7 +315,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13649,
+				"buffer_size": 14177,
 				"line_ending": "Unix"
 			}
 		},
@@ -342,8 +350,16 @@
 			"file": "scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 15732,
+				"buffer_size": 18203,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/WD-2TB-01/## Kunden Mirko ##/## Bahai-Kalender ##/Kalender 2014/2014.csv",
+			"settings":
+			{
+				"buffer_size": 8029,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -535,6 +551,9 @@
 	},
 	"file_history":
 	[
+		"/Volumes/AREA-1/02.2_Projekte/GGS Aldenhoven/Website/code/static-inter/GGS-static.sublime-project",
+		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/js/main.js",
+		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/js/main-ck.js",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/style.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/rem-mixin.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GK-Kulturgut/Website/Code/scss/_modular-scale.scss",
@@ -557,7 +576,6 @@
 		"/Users/Mirko/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/Mirko/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/Mirko/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
-		"/Volumes/AREA-1/02.2_Projekte/GGS Aldenhoven/Website/code/static-inter/GGS-static.sublime-project",
 		"/Volumes/AREA-1/02.2_Projekte/GGS Aldenhoven/Website/code/static-inter/sass/_mq-20em.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GGS Aldenhoven/Website/code/static-inter/sass/_media-queries.scss",
 		"/Volumes/AREA-1/02.2_Projekte/GGS Aldenhoven/Website/code/static-inter/index.html",
@@ -628,6 +646,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"siteinfo",
+			"li",
 			"text-align:",
 			"40em",
 			"$footer_link",
@@ -745,15 +765,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 13649,
+						"buffer_size": 14177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3838,
-								3838
+								1644,
+								1644
 							]
 						],
 						"settings":
@@ -763,7 +783,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 982.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -855,7 +875,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -863,15 +883,15 @@
 					"file": "scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 15732,
+						"buffer_size": 18203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5567,
-								5567
+								6934,
+								6934
 							]
 						],
 						"settings":
@@ -881,13 +901,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4797.0,
+						"translation.y": 5883.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "/Volumes/WD-2TB-01/## Kunden Mirko ##/## Bahai-Kalender ##/Kalender 2014/2014.csv",
+					"settings":
+					{
+						"buffer_size": 8029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "scss/_utils.scss",
 					"settings":
 					{
